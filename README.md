@@ -3,7 +3,7 @@ First year mini project in which the goal is to re-code the ls UNIX system call/
 
 USAGE :
 
-1) Make 2) ./my_ls [options] [FILES] [FOLDERS]
+1) Make 2) ./my_ls [OPTIONS] [FILES] [FOLDERS]
 
 exemple :
 
