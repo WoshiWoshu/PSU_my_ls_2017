@@ -10,6 +10,7 @@ exemple :
 ./my_ls -l -R
 
 > total 4
+>
 >-rwxr-xr-x 1 stallman operator 606 Oct 29 10:45 my_ls
 >
 >-rw-r--r-- 1 stallman prof 860 Oct 19 11:11 bdsh
