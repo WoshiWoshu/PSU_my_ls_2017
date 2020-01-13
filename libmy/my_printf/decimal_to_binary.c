@@ -26,6 +26,5 @@ char *decimal_to_binary(unsigned int x)
 	}
 	array[i] = '\0';
 	my_revstr(array);
-	my_putstr(array);
 	return (array);
 }

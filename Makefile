@@ -6,14 +6,32 @@
 ##
 
 CC = gcc
-CFLAGS = -g
+
 RM = rm -f
 
-default: all
+SRC =   my_ls.c \
+	flag_d.c \
+	flag_l.c \
+	flag_maj_l_1.c \
+	flag_maj_l_2.c \
+	without_flag.c \
 
-all:my_ls
+OBJ = $(SRC:.c=.o)
 
-my_ls:my_ls.c
-	$(CC) $(CFLAGS) -o my_ls my_ls.c libmy.a
+NAME = my_ls
+
+all     :       $(NAME)
+
+$(NAME) :       $(OBJ)
+	$(MAKE) -C ./libmy
+	$(CC) $(OBJ) -o $(NAME) -L ./libmy -l my
 clean:
-	$(RM) my_ls
+	$(RM) $(OBJ)
+
+fclean: clean
+	make -C libmy fclean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY : all fclean clean re

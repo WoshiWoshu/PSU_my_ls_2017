@@ -4,6 +4,8 @@
 ** File description:
 ** files that contain all the defines and the prototype of the libmy library
 */
+
+#define SIZE 500
 #include <stdarg.h>
 #ifndef MY_H_
 #define MY_H_
@@ -47,3 +49,4 @@ char *my_strncpy(char *dest, char const *srcn, int n);
 char *my_strstr(char *str, char const *to_find);
 char *my_strupcase(char *str);
 void my_swap(int *a, int *b);
+char *my_get_line(const int fd);

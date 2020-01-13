@@ -18,26 +18,27 @@
 #include <pwd.h>
 #include <time.h>
 #include <grp.h>
-#include "libmy/my_ls/my_printf.h" 
+#include "include/my_printf.h" 
 
 static int my_ls(int ac, char **av)
 {
-	char *array = malloc(sizeof(char)*340);
+	/* char *array = malloc(sizeof(char)*100); */
 	
-	if (av[1][0] == '-' && av[1][1] == 'l') {
-		flag_l(ac, av);
-	}
-	if (av[1][0] == '-' && av[1][1] == 'd') {
-		flag_d(ac, av);
-	}	
-	if (av[1][0] == '-' && av[1][1] == 'R' && my_strlen(av[2]) < 3) {
-		flag_l_maj_1(av, array, 0, 1 , 1);
-	}		
-	if (av[1][0] == '-' && av[1][1] == 'R' && my_strlen(av[2]) > 3) {
-		flag_maj_l_2(av, array, 0, 1 , 1);
-	} else {
-		without_flag(ac, av);
-	}
+	/* if (av[1][0] == '-' && av[1][1] == 'l') { */
+	/* 	flag_l(ac, av); */
+	/* } */
+	/* if (av[1][0] == '-' && av[1][1] == 'd') { */
+	/* 	flag_d(ac, av); */
+	/* }	 */
+	/* if (av[1][0] == '-' && av[1][1] == 'R' && my_strlen(av[2]) < 3) { */
+	/* 	flag_l_maj_1(av, array, 0, 1 , 1); */
+	/* }		 */
+	/* if (av[1][0] == '-' && av[1][1] == 'R' && my_strlen(av[2]) > 3) { */
+	/* 	flag_maj_l_2(av, array, 0, 1 , 1); */
+	/* } else { */
+	/* 	without_flag(ac, av); */
+	/* } */
+	without_flag(ac, av);
 	return (0);
 }
 

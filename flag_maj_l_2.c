@@ -18,7 +18,7 @@
 #include <pwd.h>
 #include <time.h>
 #include <grp.h>
-#include "libmy/my_ls/my_printf.h"
+#include "include/my_printf.h"
 
 int flag_maj_l_2(char **av,char *array, int i, int k, int j)
 {
