@@ -5,12 +5,4 @@ USING : 1) Make 2) ./my_ls [-lRdrt] [FILE].
 
 EXEMPLE : 
 
-> ./my_ls -l -R
-
-> -rwxr-xr-x 1 stallman operator 606 Oct 29 10:45 my_ls
-
-> -rw-r--r-- 1 stallman prof 860 Oct 19 11:11 bdsh
-
-> -rw-r--r-- 2 stallman operator 830 Oct 13 14:11 bdsh~
-
-> -rwxr-xr-x 1 stallman operator 497 Oct 13 14:00 stream.a*
+> ./my_ls ./
