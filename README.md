@@ -5,4 +5,6 @@ USING : 1) Make 2) ./my_ls [-lRdrt] [FILE].
 
 EXEMPLE : 
 
-> ./my_ls ./
+> ./my_ls libmy
+
+> ./my_ls .
