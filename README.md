@@ -1,10 +1,16 @@
 # PSU_my_ls_2017
-First year mini project in which the goal is to re-code the ls UNIX system call/command. It can handle most of the ls options in either order as "-lRdrt". It can also pass a list of files/folders as parameter.
+First year mini project in C in which the goal is to re-code the ls UNIX system call/command.
+It can handle most of the ls options in either order as "-lRdrt".
+It can also pass a list of files/folders as parameter.
 
-USING : 1) Make 2) ./my_ls [-lRdrt] [FILE].
+USING :
+      
+    Make
+    
+    ./my_ls [-lRdrt] [FILE].
 
 EXEMPLE : 
 
-> ./my_ls libmy
+    > ./my_ls libmy
 
-> ./my_ls .
+    > ./my_ls .
