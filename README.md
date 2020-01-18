@@ -3,7 +3,7 @@ First year mini project in C in which the goal is to re-code the ls UNIX system 
 It can handle most of the ls options in either order as "-lRdrt".
 It can also pass a list of files/folders as parameter.
 
-USING :
+USAGE :
       
     Make
     
